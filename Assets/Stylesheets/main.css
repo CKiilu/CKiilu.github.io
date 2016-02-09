@@ -17,9 +17,9 @@ h6 {
 
 body {
     background-image: url(../Images/straightroad.jpg);
-    width: 100%;
-    height: 100%;
     padding: 0;
+    height: 100%;
+    width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-size: 1.2em;
@@ -34,7 +34,7 @@ body p {
     background-color: black;
     opacity: 0.7;
     color: #fff;
-    bottom: 0;
+    height: 100vh;
 }
 #home-txt,
 #home h1 {
@@ -42,10 +42,15 @@ body p {
 }
 @media only screen and (max-width: 40em) {
     #home {
-        margin-bottom: 10%;
+        height: 100vh;
     }
-    #home h1 {
-        font-size: 1.5em;
+    #home h1,
+    #home-txt {
+        font-size: 1.2em;
+    }
+    #home-img {
+        height: auto;
+        margin: 0 auto;
     }
 }
 
