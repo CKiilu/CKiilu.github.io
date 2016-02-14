@@ -26,10 +26,18 @@ p,
 li {
     color: #fff;
 }
+hr {
+    border-color: rgb(154, 119, 111);
+}
 section {}
 
 /*Nav*/
 
+.cd-nav-trigger {
+    /*    menu nav*/
+    border: 2px solid #9a776f;
+    padding: 10px;
+}
 .cd-stretchy-nav {
     position: fixed;
     z-index: 2;
@@ -42,25 +50,22 @@ section {}
     z-index: 1;
     top: 0;
     right: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    background: #9a776f;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    width: 80px;
+    height: 0px;
     transition: height 0.2s, box-shadow 0.2s;
 }
 .cd-stretchy-nav.nav-is-visible .stretchy-nav-bg {
     height: 100%;
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
 }
 
 /*nav list items*/
 
-.cd-strtchy-nav ul {
+.cd-stretchy-nav ul {
     position: relative;
     z-index: 2;
     visibility: hidden;
     transition: visibility 0.3s;
+    list-style: none;
 }
 .cd-stretchy-nav ul a {
     position: relative;
@@ -73,7 +78,6 @@ section {}
     width: 16px;
     transform: translateY(-50%) scale(0);
     opacity: .6;
-    background: url(../img/img/cd-sprite-1.svg);
 }
 .cd-stretchy-nav ul span {
     /*    Nav labels*/
@@ -94,7 +98,7 @@ section {}
     transform: translateX(0);
     animation: slideIn 0.15s backwards;
 }
-.cd-ctretchy-nav.nav-is-visible ul li:first-of-type a::after,
+.cd-stretchy-nav.nav-is-visible ul li:first-of-type a::after,
 .cd-stretchy-nav.nav-is-visible ul li:first-of-type span {
     animation-delay: .05s;
 }
@@ -102,13 +106,18 @@ section {}
 /*Animations*/
 
 @keyframes scaleIn {
-    from {}
+    from {
+        transform: translateY(-50%) scale(0);
+    }
     to {
         transform: translateY(-50%) scale(1);
     }
 }
 @keyframes slideIn {
-    from {}
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
     to {
         opacity: 1;
         transform: translateX(0);
