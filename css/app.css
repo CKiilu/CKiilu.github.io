@@ -26,10 +26,17 @@ p,
 li {
     color: #fff;
 }
+ul {
+    list-style: none;
+}
 hr {
     border-color: rgb(154, 119, 111);
 }
-section {}
+section {
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
 
 /*Nav*/
 
@@ -65,7 +72,6 @@ section {}
     z-index: 2;
     visibility: hidden;
     transition: visibility 0.3s;
-    list-style: none;
 }
 .cd-stretchy-nav ul a {
     position: relative;
