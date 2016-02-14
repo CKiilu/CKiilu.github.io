@@ -49,6 +49,22 @@ section {}
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     transition: height 0.2s, box-shadow 0.2s;
 }
+.cd-stretchy-nav.nav-is-visible .stretchy-nav-bg {
+    height: 100%;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+/*nav list items*/
+
+.cd-strtchy-nav ul {
+    position: relative;
+    z-index: 2;
+    visibility: hidden;
+    transition: visibility 0.3s;
+}
+.cd-stretchy-nav ul a {
+    position: relative;
+}
 
 /*home*/
 
