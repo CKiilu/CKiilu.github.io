@@ -28,6 +28,15 @@ li {
 }
 section {}
 
+/*Nav*/
+
+.cd-stretchy-nav {
+    position: fixed;
+    z-index: 2;
+    top: 40px;
+    right: 5%;
+}
+
 /*home*/
 
 #home {
