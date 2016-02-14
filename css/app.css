@@ -19,6 +19,9 @@ h6,
 a {
     color: rgb(154, 119, 111);
 }
+a:hover {
+    color: #fff;
+}
 p,
 li {
     color: #fff;
