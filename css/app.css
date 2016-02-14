@@ -65,6 +65,22 @@ section {}
 .cd-stretchy-nav ul a {
     position: relative;
 }
+.cd-stretchy-nav ul a::after {
+    /*nav list icons*/
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    transform: translateY(-50%) scale(0);
+    opacity: .6;
+    background: url(../img/img/cd-sprite-1.svg);
+}
+.cd-stretchy-nav ul span {
+    /*    Nav labels*/
+    display: block;
+    opacity: 0;
+    transform: translateX(-25px);
+}
 
 /*home*/
 
