@@ -81,6 +81,23 @@ section {}
     opacity: 0;
     transform: translateX(-25px);
 }
+.cd-stretchy-nav.nav-is-visible ul {
+    visibility: visible;
+}
+.cd-stretchy-nav.nav-is-visible ul a::after {
+    /*    nav icons*/
+    transform: translateY(-50%) scale(1);
+    animation: scaleIn 0.15s backwards;
+}
+.cd-stretchy-nav.nav-is-visible ul span {
+    opacity: 1;
+    transform: translateX(0);
+    animation: slideIn 0.15s backwards;
+}
+.cd-ctretchy-nav.nav-is-visible ul li:first-of-type a::after,
+.cd-stretchy-nav.nav-is-visible ul li:first-of-type span {
+    animation-delay: .05s;
+}
 
 /*home*/
 
