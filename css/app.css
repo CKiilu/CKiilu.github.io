@@ -1,0 +1,37 @@
+/*
+    colors used
+    #201c25/rgb(32,28,37)  > grey-black
+    #9a776f/rgb(154,119,111)  > brown
+*/
+
+
+/*General styles*/
+
+body {
+    background: rgb(32, 28, 37);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    color: rgb(154, 119, 111);
+}
+p,
+li {
+    color: #fff;
+}
+section {}
+
+/*home*/
+
+#home {
+    height: 100vh;
+    width: 100vw;
+}
+#home img {
+    margin-left: 20%;
+    margin-top: 14%;
+}
