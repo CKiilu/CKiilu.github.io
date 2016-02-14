@@ -36,6 +36,19 @@ section {}
     top: 40px;
     right: 5%;
 }
+.cd-stretchy-nav .stretchy-nav-bg {
+    /*Nav bg*/
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #9a776f;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    transition: height 0.2s, box-shadow 0.2s;
+}
 
 /*home*/
 
