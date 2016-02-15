@@ -136,6 +136,26 @@ section {
     padding-top: 10%;
 }
 
+/*Works*/
+
+.under-img,
+.over-txt {
+    height: 400px;
+}
+.under-img {
+    position: relative;
+    width: 100%;
+}
+.over-txt {
+    position: absolute;
+    padding: 10%;
+    opacity: 0;
+}
+.over-txt:hover {
+    background: rgba(154, 119, 111, 0.4);
+    opacity: 1;
+}
+
 /*services*/
 
 #services div:hover {
