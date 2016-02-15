@@ -130,30 +130,47 @@ section {
     }
 }
 
-/*home*/
+/*home and about*/
 
+#home,
+#about {
+    height: 100vh;
+}
 #home img {
     padding-top: 10%;
+}
+#about {
+    padding: 10%;
 }
 
 /*Works*/
 
 .under-img,
-.over-txt {
+.over-txt,
+.under-img img {
     height: 400px;
+}
+.under-img img {
+    width: auto;
 }
 .under-img {
     position: relative;
-    width: 100%;
 }
 .over-txt {
     position: absolute;
-    padding: 10%;
     opacity: 0;
+    top: 0;
 }
 .over-txt:hover {
     background: rgba(154, 119, 111, 0.4);
     opacity: 1;
+}
+
+/*contact*/
+
+#contact {
+    height: 50vh;
+    padding: 10%;
 }
 
 /*services*/
@@ -178,3 +195,13 @@ section {
         border: 4px solid #9a776f;
     }
 }
+
+/*Media queries*/
+
+@media only screen and (max-width: 40em) {
+    #home {
+        max-height: 85vh;
+    }
+}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
