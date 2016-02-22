@@ -24,8 +24,6 @@
             <hr>
             <li><a href="#about"><span>About</span></a></li>
             <hr>
-            <li><a href="#services"><span>Skills</span></a></li>
-            <hr>
             <li><a href="#folio"><span>My Works</span></a></li>
             <hr>
             <li><a href="#contact"><span>Contact</span></a></li>
@@ -75,8 +73,12 @@
     <hr>
     <section class="row" id="contact">
         <h2>Contact Me Using:</h2>
-        <p>Email: cndeti@gmail.com</p>
-        <p>Phone: +254 702 495 084</p>
+        <form method="post" class="clearfix">
+            <input type="text" placeholder="Name..." required id="left" class="clear">
+            <input type="text" placeholder="Email..." required id="right" class="clear">
+            <textarea placeholder="Your Message here" required class="clear" id="message"></textarea>
+            <input type="submit" value="submit" id="submit">
+        </form>
     </section>
     <script src="js/js/jquery-2.1.4.js">
 
