@@ -219,6 +219,18 @@ section {
     .under-img,
     .over-txt,
     .under-img img {
-        height: 200px;
+        height: 300px;
+    }
+    .under-img img {
+        visibility: hidden;
+    }
+    .over-txt {
+        opacity: 1;
+        font-size: 1em;
+    }
+}
+@media only screen and (orientation: landscape) {
+    #home {
+        max-height: 100vh;
     }
 }
