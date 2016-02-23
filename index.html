@@ -14,29 +14,22 @@
 </head>
 
 <body class="row text-center">
-    <nav class="cd-stretchy-nav">
-        <a class="cd-nav-trigger">
-            Menu
-            <span aria-hidden="true"></span>
-        </a>
-        <ul>
-            <hr>
-            <li><a href="#home" class="active"><span>Home</span></a></li>
-            <hr>
-            <li><a href="#about"><span>About</span></a></li>
-            <hr>
-            <li><a href="#folio"><span>My Works</span></a></li>
-            <hr>
-            <li><a href="#contact"><span>Contact</span></a></li>
-            <hr>
-        </ul>
-        <span aria-hidden="true" class="stretchy-nav-bg"></span>
+    <nav class="ck-vertical-nav text-right">
+        <a class="ck-nav-trigger">Menu</a>
+        <div class="ck-nav-wrapper">
+            <ul>
+                <li><a href="#home" class="active"><span class="label">Home</span></a></li>
+                <li><a href="#about"><span class="label">About Me</span></a></li>
+                <li><a href="#folio"><span class="label">My Works</span></a></li>
+                <li><a href="#contact"><span class="label">Contact Me</span></a></li>
+            </ul>
+        </div>
     </nav>
-    <section class="row" id="home">
+    <section class="row ck-section" id="home">
         <img src="img/Drawing%20(3).png" class="column small-12">
     </section>
     <hr>
-    <section class="row" id="about">
+    <section class="row ck-section" id="about">
         <div>
             <h2>About me</h2>
             <p>Hello,
@@ -46,7 +39,7 @@
         </div>
     </section>
     <hr>
-    <section class="row large-collapse" id="folio">
+    <section class="row ck-section large-collapse" id="folio">
         <h2 id="work">My Works</h2>
         <div class="under-img columns small-10 small-offset-1 large-4 large-offset-0 ">
             <img src="img/h_img.jpg">
@@ -72,7 +65,7 @@
         </div>
     </section>
     <hr>
-    <section class="row" id="contact">
+    <section class="row ck-section" id="contact">
         <h2>Contact Me Using:</h2>
         <form method="post" class="clearfix">
             <input type="text" placeholder="Name..." required id="left" class="clear">

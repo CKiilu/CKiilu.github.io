@@ -53,96 +53,30 @@ section {
 
 /*Nav*/
 
-.cd-nav-trigger {
+.ck-nav-trigger {
     /*    menu nav*/
     border: 2px solid #9a776f;
     padding: 10px;
     background: rgba(32, 28, 37, 0.8);
 }
-.cd-stretchy-nav {
+.ck-vertical-nav {
     position: fixed;
     z-index: 2;
     top: 40px;
     right: 5%;
 }
-.cd-stretchy-nav .stretchy-nav-bg {
-    /*Nav bg*/
+.ck-vertical-nav .label {
+    color: #9a776f;
+    background: none;
+    font-size: 1.5em;
+    transform: translateY(10px);
+}
+
+/*Opening nav*/
+
+.ck-nav-wrapper {
+    transform: translateX(30vw);
     position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    width: 80px;
-    height: 0px;
-    transition: height 0.2s, box-shadow 0.2s;
-}
-.cd-stretchy-nav.nav-is-visible .stretchy-nav-bg {
-    height: 100%;
-}
-
-/*nav list items*/
-
-.cd-stretchy-nav ul {
-    position: relative;
-    z-index: 2;
-    visibility: hidden;
-    transition: visibility 0.3s;
-}
-.cd-stretchy-nav ul a {
-    position: relative;
-}
-.cd-stretchy-nav ul a::after {
-    /*nav list icons*/
-    content: "";
-    position: absolute;
-    height: 16px;
-    width: 16px;
-    transform: translateY(-50%) scale(0);
-    opacity: .6;
-}
-.cd-stretchy-nav ul span {
-    /*    Nav labels*/
-    display: block;
-    opacity: 0;
-    transform: translateX(-25px);
-}
-.cd-stretchy-nav.nav-is-visible ul {
-    visibility: visible;
-}
-.cd-stretchy-nav.nav-is-visible ul a::after {
-    /*    nav icons*/
-    transform: translateY(-50%) scale(1);
-    animation: scaleIn 0.15s backwards;
-}
-.cd-stretchy-nav.nav-is-visible ul span {
-    opacity: 1;
-    transform: translateX(0);
-    animation: slideIn 0.15s backwards;
-    color: #fff;
-}
-.cd-stretchy-nav.nav-is-visible ul li:first-of-type a::after,
-.cd-stretchy-nav.nav-is-visible ul li:first-of-type span {
-    animation-delay: .05s;
-}
-
-/*Animations*/
-
-@keyframes scaleIn {
-    from {
-        transform: translateY(-50%) scale(0);
-    }
-    to {
-        transform: translateY(-50%) scale(1);
-    }
-}
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-25px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 
 /*home and about*/
