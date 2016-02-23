@@ -69,7 +69,8 @@ section {
     color: #9a776f;
     background: none;
     font-size: 1.5em;
-    transform: translateY(10px);
+    transform: translateY(10vh);
+    line-height: 32px;
 }
 
 /*Opening nav*/
@@ -78,15 +79,34 @@ section {
     transform: translateX(30vw);
     position: absolute;
 }
+.move0 {
+    animation: anim0 4s 1s forwards cubic-bezier(.4, .9, .3, .5);
+    /*    animation: space 3s 5s forwards ease-in;*/
+}
+.move30 {
+    animation: anim30 4s 1s forwards cubic-bezier(.4, .9, .3, .5);
+}
+@keyframes anim0 {
+    to {
+        transform: translateX(-10vw);
+    }
+}
+@keyframes anim30 {
+    to {
+        transform: translateX(-30vw);
+    }
+}
+@keyframes space {
+    to {
+        transform: translateY(5vh);
+    }
+}
 
 /*home and about*/
 
-#home,
-#about {
-    height: 100vh;
-}
 #home {
     padding: 10%;
+    height: 100%;
 }
 
 /*about*/
